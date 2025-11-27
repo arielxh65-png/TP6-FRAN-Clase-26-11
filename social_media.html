@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NIHON MEDIA — Multimedia</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand"><a href="index.html">NIHON MEDIA</a></div>
+    <button class="nav-toggle" id="navToggle2" aria-expanded="false" aria-controls="mainNav2">
+      <span class="hamburger"></span>
+      <span class="sr-only">Abrir menú</span>
+    </button>
+    <nav id="mainNav2" class="main-nav" aria-label="Navegación principal">
+      <ul class="nav-list">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="social_media.html" aria-current="page">Multimedia</a></li>
+        <li><a href="social_comentario.html">Comentarios</a></li>
+        <li><a href="social_noticias.html">Noticias</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Multimedia</h1>
+    <p class="lead">Tres elementos multimedia con botón de like.</p>
+
+    <section class="media-grid">
+
+      <!-- ITEM 1: VIDEO -->
+      <article class="media-card">
+        <div class="media-preview">
+          <div class="video-wrap">
+            <iframe 
+              src="https://www.youtube.com/embed/KMvRsMM3Iyk" 
+              title="Video demo" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+        <div class="media-body">
+          <h3>Video más visto esta semana</h3>
+          <div class="like-row">
+            <button class="like-btn" data-id="media-video-1" aria-pressed="false" title="Me gusta">
+              <svg class="icon-heart" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 21s-7-4.35-9-6.9C-0.1 9.9 3.4 4 8.5 5.6 10.2 6.2 12 8 12 8s1.8-1.8 3.5-2.4C20.6 4 24.1 9.9 21 14.1 19 16.65 12 21 12 21z"/>
+              </svg>
+              <span class="like-count">0</span>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- ITEM 2: IMAGEN -->
+      <article class="media-card">
+        <div class="media-preview">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh_EijCKiFFOndhwKPtlNvBYGUWNxmuVlpNQ&s" />
+        </div>
+        <div class="media-body">
+          <h3>Ganador del concurso de fotografía</h3>
+          <p>Imágen con más likes.</p>
+          <div class="like-row">
+            <button class="like-btn" data-id="media-img-1" aria-pressed="false" title="Me gusta">
+              <svg class="icon-heart" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 21s-7-4.35-9-6.9C-0.1 9.9 3.4 4 8.5 5.6 10.2 6.2 12 8 12 8s1.8-1.8 3.5-2.4C20.6 4 24.1 9.9 21 14.1 19 16.65 12 21 12 21z"/>
+              </svg>
+              <span class="like-count">0</span>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- ITEM 3: AUDIO -->
+      <article class="media-card">
+        <div class="media-preview audio-preview" style="position: relative;">
+          <iframe 
+            width="100%" 
+            height="166" 
+            scrolling="no" 
+            frameborder="no" 
+            allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/alejandra-beatriz-ferreras/casa-7&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+            style="pointer-events: auto;">
+          </iframe>
+        </div>
+        <div class="media-body">
+          <h3>Podcast: Miercoles 26/11/2025</h3>
+          <p>Hablando con alumnos del último semestre de psicología.</p>
+          <div class="like-row">
+            <button class="like-btn" data-id="media-audio-1" aria-pressed="false" title="Me gusta" style="position: relative; z-index: 2;">
+              <svg class="icon-heart" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 21s-7-4.35-9-6.9C-0.1 9.9 3.4 4 8.5 5.6 10.2 6.2 12 8 12 8s1.8-1.8 3.5-2.4C20.6 4 24.1 9.9 21 14.1 19 16.65 12 21 12 21z"/>
+              </svg>
+              <span class="like-count">0</span>
+            </button>
+          </div>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p><a href="index.html">← Volver al inicio</a> — NIHON MEDIA</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
